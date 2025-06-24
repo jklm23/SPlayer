@@ -31,6 +31,7 @@ jobs:
       - name: Log in to Harbor
         uses: docker/login-action@v3
         with:
+          registry: harbor.minipc.102911.xyz:10028
           username: ${{ secrets.HARBOR_USERNAME }}
           password: ${{ secrets.HARBOR_PASSWORD }}
 
